@@ -1,0 +1,62 @@
+/* footer.css */
+
+footer {
+    padding: 40px 0;
+    color: #333;
+    background-color: transparent; /* Убираем фон у футера */
+}
+
+footer .container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: transparent; /* Убираем фон у контейнера футера */
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+footer .footer-section {
+    width: 23%;
+    margin-bottom: 20px;
+}
+
+footer .footer-section h4 {
+    font-size: 1.3rem;
+    color: #e91e63; /* Розовый цвет для заголовков */
+    margin-bottom: 15px;
+}
+
+footer .footer-section p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+footer .footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer .footer-section ul li {
+    margin-bottom: 10px;
+}
+
+footer .footer-section ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+footer .footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+footer .footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1rem;
+    color: #666;
+}

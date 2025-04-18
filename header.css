@@ -1,0 +1,78 @@
+/* Стили для хедера */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f1f1; /* Светлый розовый фон */
+    padding: 15px 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header .logo a {
+    font-size: 28px;
+    color: #ff69b4; /* Яркий розовый цвет */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav.menu {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+nav .menu-item {
+    margin: 0 20px;
+}
+
+nav .menu-item a {
+    display: block;
+    padding: 12px 20px;
+    background-color: #ff69b4;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav .menu-item a:hover {
+    background-color: #ff1493; /* Более темный розовый при наведении */
+    transform: translateY(-3px); /* Легкое поднятие кнопки при наведении */
+}
+
+.user-actions {
+    display: flex;
+    align-items: center;
+}
+
+.user-actions .user-icon {
+    margin-left: 20px;
+    color: #ff69b4;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.user-actions .user-icon:hover {
+    color: #ff1493; /* Темный розовый для иконок при наведении */
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav.menu {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    nav .menu-item {
+        margin: 5px 0;
+    }
+}
